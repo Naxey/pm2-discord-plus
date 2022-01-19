@@ -7,8 +7,8 @@ This is a PM2 Module for sending events & logs from your PM2 processes to Discor
 To install and setup pm2-discord, run the following commands:
 
 ```text
-pm2 install pm2-discord
-pm2 set pm2-discord:discord_url https://discord_url
+pm2 install pm2-discord-plus
+pm2 set pm2-discord-plus:discord_url https://discord_url
 ```
 
 #### `discord_url`
@@ -34,8 +34,8 @@ The following events can be subscribed to:
 You can simply turn these on and off by setting them to true or false using the PM2 set command.
 
 ```text
-pm2 set pm2-discord:log true
-pm2 set pm2-discord:error false
+pm2 set pm2-discord-plus:log true
+pm2 set pm2-discord-plus:error false
 ...
 ```
 
@@ -53,10 +53,10 @@ Set these options in the same way you subscribe to events.
 Example: The following configuration options will enable message buffering, and set the buffer duration to 2 seconds. All messages that occur within 2 seconds of each other (for the same event) will be concatenated into a single discord message.
 
 ```text
-pm2 set pm2-discord:process_name myprocess
-pm2 set pm2-discord:buffer true
-pm2 set pm2-discord:buffer_seconds 2
-pm2 set pm2-discord:queue_max 50
+pm2 set pm2-discord-plus:process_name myprocess
+pm2 set pm2-discord-plus:buffer true
+pm2 set pm2-discord-plus:buffer_seconds 2
+pm2 set pm2-discord-plus:queue_max 50
 ```
 
 ## Contributing
