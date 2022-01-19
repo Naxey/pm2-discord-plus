@@ -4,7 +4,7 @@ This is an improved PM2 Module for sending events & logs from your PM2 processes
 
 ## Install
 
-To install and setup pm2-discord, run the following commands:
+To install and setup pm2-discord-plus, run the following commands:
 
 ```text
 pm2 install pm2-discord-plus
