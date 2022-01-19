@@ -1,6 +1,6 @@
-# pm2-discord
+# pm2-discord-plus
 
-This is a PM2 Module for sending events & logs from your PM2 processes to Discord.
+This is an improved PM2 Module for sending events & logs from your PM2 processes to Discord.
 
 ## Install
 
