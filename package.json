@@ -1,7 +1,7 @@
 {
   "name": "pm2-discord-plus",
   "version": "0.1.2",
-  "description": "A PM2 module to emit events to discord",
+  "description": "A PM2 module to emit events to discord with style",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
