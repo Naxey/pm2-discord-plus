@@ -15,12 +15,7 @@
     "discord"
   ],
   "author": "Naxey <max@naxey.de> (https://github.com/Naxey)",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/Naxey/pm2-discord-plus/blob/master/LICENSE"
-    }
-  ],
+  "licenses": "",
   "bugs": {
     "url": "https://github.com/Naxey/pm2-discord-plus/issues"
   },
