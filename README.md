@@ -65,4 +65,4 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Acknowledgements
 
-Forked from [FranciscoG/pm2-discord](https://github.com/FranciscoG/pm2-discord) for quality of live improvements.
+Forked from [FranciscoG/pm2-discord](https://github.com/FranciscoG/pm2-discord) for quality of life improvements.
