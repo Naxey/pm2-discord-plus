@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.3
+### Jan 21, 2022
+
+Initial fork of the code from `pm2-discord`
+
 ## 0.1.2
 ### May 4, 2020
 
