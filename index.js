@@ -4,7 +4,7 @@ var pmx = require('pmx');
 var request = require('request');
 var stripAnsi = require('strip-ansi');
 
-var config = require('config.json');
+var config = require('./config.json');
 
 // Get the configuration from PM2
 var conf = pmx.initModule();
@@ -40,12 +40,12 @@ function sendToDiscord(message) {
   var profile_img;
 
   switch (message.event) {
-    case 'log': profile_img = config.images.console; break;
-    case 'error': profile_img = config.images.error; break;
-    case 'info': profile_img = config.images.info; break;
-    case 'success': profile_img = config.images.success; break;
-    case 'supression': profile_img = config.images.warning; break;
-    default: profile_img = config.images.console;
+    case 'log': profile_img = config.image.console; break;
+    case 'error': profile_img = config.image.error; break;
+    case 'info': profile_img = config.image.info; break;
+    case 'success': profile_img = config.image.success; break;
+    case 'supression': profile_img = config.image.warning; break;
+    default: profile_img = config.image.console;
   }
 
   var profile_url = config.image_url + profile_img;
