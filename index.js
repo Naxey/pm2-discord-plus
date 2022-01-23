@@ -4,7 +4,7 @@ var pmx = require('pmx');
 var request = require('request');
 var stripAnsi = require('strip-ansi');
 
-var config = require('./config.json');
+var config = require('config.json');
 
 // Get the configuration from PM2
 var conf = pmx.initModule();
