@@ -10,11 +10,21 @@
     "type": "git",
     "url": "https://github.com/Naxey/pm2-discord-plus"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/naxey"
+  },
   "keywords": [
     "pm2",
-    "discord"
+    "discord",
+    "plus",
+    "improved",
+    "embed",
+    "log"
   ],
-  "author": "Naxey <max@naxey.de> (https://github.com/Naxey)",
+  "author": {
+    "name": "Naxey",
+    "email": "max@naxey.de"
+  },
   "licenses": "",
   "bugs": {
     "url": "https://github.com/Naxey/pm2-discord-plus/issues"
