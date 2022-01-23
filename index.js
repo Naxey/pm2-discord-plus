@@ -4,6 +4,8 @@ var pmx = require('pmx');
 var request = require('request');
 var stripAnsi = require('strip-ansi');
 
+var config = require('./config.json');
+
 // Get the configuration from PM2
 var conf = pmx.initModule();
 
@@ -31,12 +33,27 @@ function sendToDiscord(message) {
 
   // If a Discord URL is not set, we do not want to continue and nofify the user that it needs to be set
   if (!conf.discord_url) {
-    return console.error("There is no Discord URL set, please set the Discord URL: 'pm2 set pm2-discord:discord_url https://[discord_url]'");
+    return console.error("There is no Discord URL set, please set the Discord URL: 'pm2 set pm2-discord-plus:discord_url https://[discord_url]'");
   }
+
+  // Select the webhook profile image based on the process type
+  var profile_img;
+
+  switch (message.event) {
+    case 'log': profile_img = config.images.console; break;
+    case 'error': profile_img = config.images.error; break;
+    case 'info': profile_img = config.images.info; break;
+    case 'success': profile_img = config.images.success; break;
+    case 'supression': profile_img = config.images.warning; break;
+    default: profile_img = config.images.console;
+  }
+
+  var profile_url = config.image_url + profile_img;
 
   // The JSON payload to send to the Webhook
   var payload = {
-    "content" : description
+    "content" : description,
+    "avatar_url": profile_url
   };
 
   // Options for the post request
@@ -102,7 +119,7 @@ function processQueue() {
       suppressed.isSuppressed = true;
       suppressed.date = new Date().getTime();
       sendToDiscord({
-          name: 'pm2-discord',
+          name: 'pm2-discord-plus',
           event: 'suppressed',
           description: 'Messages are being suppressed due to rate limiting.'
       });
@@ -122,8 +139,8 @@ function processQueue() {
 }
 
 function createMessage(data, eventName, altDescription) {
-  // we don't want to output pm2-discord's logs
-  if (data.process.name === 'pm2-discord') {
+  // we don't want to output pm2-discord-plus's logs
+  if (data.process.name === 'pm2-discord-plus') {
     return;
   }
   // if a specific process name was specified then we check to make sure only 
