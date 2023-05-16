@@ -1,22 +1,22 @@
 {
-    "image_url":"https://naxey.de/pm2-discord-plus/images/",
-    "image": [
-        {"console":"console.png"},
-        {"error":"error.png"},
-        {"info":"info.png"},
-        {"success":"success.png"},
-        {"warning":"warning.png"}
-    ],
-    "color": [
-        {"console":"#CFCFCF"},
-        {"console_bg":"#333333"},
-        {"error":"#D8000C"},
-        {"error_bg":"#FFD2D2"},
-        {"info":"#00529B"},
-        {"info_bg":"#BDE5F8"},
-        {"success":"#4F8A10"},
-        {"success_bg":"#DFF2BF"},
-        {"warning":"#9F6000"},
-        {"warning_bg":"#FEEFB3"}
-    ]
+    "image_url": "https://naxey.de/pm2-discord-plus/images/",
+    "image": {
+        "console": "console.png",
+        "error": "error.png",
+        "info": "info.png",
+        "success": "success.png",
+        "warning": "warning.png"
+    },
+    "color": {
+        "console": "#CFCFCF",
+        "console_bg": "#333333",
+        "error": "#D8000C",
+        "error_bg": "#FFD2D2",
+        "info": "#00529B",
+        "info_bg": "#BDE5F8",
+        "success": "#4F8A10",
+        "success_bg": "#DFF2BF",
+        "warning": "#9F6000",
+        "warning_bg": "#FEEFB3"
+    }
 }
