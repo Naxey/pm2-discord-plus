@@ -44,7 +44,7 @@ function sendToDiscord(message) {
     case 'error': profile_img = config.image.error; break;
     case 'info': profile_img = config.image.info; break;
     case 'success': profile_img = config.image.success; break;
-    case 'supression': profile_img = config.image.warning; break;
+    case 'suppressed': profile_img = config.image.warning; break;
     default: profile_img = config.image.console;
   }
 
