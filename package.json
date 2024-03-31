@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Naxey/pm2-discord-plus"
+    "url": "https://github.com/naxey/pm2-discord-plus"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/naxey"
@@ -21,17 +21,17 @@
     "embed",
     "log"
   ],
-  "author": "Naxey <max@naxey.de> (https://github.com/Naxey)",
+  "author": "Maximilian Hoffmann <max@naxey.de> (https://github.com/naxey)",
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/Naxey/pm2-discord-plus/blob/master/LICENSE"
+      "url": "https://github.com/naxey/pm2-discord-plus/blob/master/LICENSE"
     }
   ],
   "bugs": {
-    "url": "https://github.com/Naxey/pm2-discord-plus/issues"
+    "url": "https://github.com/naxey/pm2-discord-plus/issues"
   },
-  "homepage": "https://github.com/Naxey/pm2-discord-plus",
+  "homepage": "https://github.com/naxey/pm2-discord-plus",
   "dependencies": {
     "pm2": "^5.3.1",
     "pmx": "^1.6.7",
