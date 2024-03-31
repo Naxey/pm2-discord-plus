@@ -1,4 +1,13 @@
+# Dependency directories
 node_modules
-.DS_Store
-.jshintrc
+
+# dotenv environment variables file
 .env
+.env.test
+.env.production
+
+# user configuration files
+.jshintrc
+
+# OS generated files
+.DS_Store
