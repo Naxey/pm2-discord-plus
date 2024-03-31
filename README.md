@@ -11,7 +11,7 @@ pm2 install pm2-discord-plus
 pm2 set pm2-discord-plus:discord_url https://discord_url
 ```
 
-#### `discord_url`
+### Where do I find the `discord_url`?
 
 To get the Discord URL, you need to setup a Webhook. More details on how to set this up can be found here: <https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks>
 
