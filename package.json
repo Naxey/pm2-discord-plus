@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/naxey/pm2-discord-plus",
   "dependencies": {
-    "pm2": "^5.3.1",
+    "pm2": "^5.4.0",
     "pmx": "^1.6.7",
     "request": "^2.88.0",
     "strip-ansi": "^6.0.0"
